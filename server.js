@@ -25,7 +25,5 @@ app.get('/expenses', function (req, res) {
     collection.find({}).toArray((err, data) => {
       res.send(data)
     });
-    // perform actions on the collection object
-    // client.close();
   });
 });
